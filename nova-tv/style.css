@@ -1,0 +1,139 @@
+h1 {
+    font-family: Arial, Verdana;
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.nova-clip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    width:600px;
+    height: 360px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    overflow: hidden;  
+}
+.nova {
+    position:relative;
+    width: 212px;
+    height: 212px;
+    background: -webkit-linear-gradient(#cce6ed, #0097C3);
+    background: -ms-linear-gradient(#cce6ed, #0097C3);
+    background: -moz-linear-gradient(#cce6ed, #0097C3);
+    background: -o-linear-gradient(#cce6ed, #0097C3);
+    background: linear-gradient(#cce6ed, #0097C3);
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;            
+}
+.nova:after {
+    display: block;
+    position: absolute;
+    top: 61px;
+    content: "NOV\039b";
+    font-size: 90px;
+    margin-left: -11px;
+    font-family: Arial, Verdana;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -8px;
+}         
+.pipe {
+    border-radius: 60px;
+    position: absolute;
+    background: -webkit-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: -ms-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: -moz-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: -o-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));        
+    transition: 1s cubic-bezier(.3,.13,1,.17);
+    transform-origin: 0 0;
+    z-index: 1;
+}      
+.pipe-0 {
+    top: 50px;
+    left: 320px;
+    width: 200px;
+    height: 80px;
+    transform: rotate(135deg);
+}
+.nova-clip:hover .pipe-0 {
+    top: 370px;
+    left: 0; /* left1 - |top2 - top1| */
+    width: 300px;            
+}
+.pipe-1 {
+    top: 250px;
+    left: 80px;
+    width: 200px;
+    height: 80px;
+    transform: rotate(-45deg); 
+}
+.nova-clip:hover .pipe-1 {
+    top: -125px;
+    left: 455px; /* left1 + |top2 - top1| */
+    width: 300px;            
+}        
+.pipe-2 {
+    top: 340px;
+    left: 200px;
+    width: 200px;
+    height: 120px;
+    transform: rotate(-45deg);
+    z-index: 4;
+}
+.nova-clip:hover .pipe-2 {
+    top: -125px;
+    left: 665px;
+    width: 300px;            
+}        
+.pipe-3 {
+    top: 250px;
+    left: 170px;
+    width: 200px;
+    height: 60px;
+    transform: rotate(-45deg);
+    z-index: 3;
+}  
+.nova-clip:hover .pipe-3 {
+    top: -125px;
+    left: 545px;
+    width: 300px;            
+}                    
+.pipe-4 {
+    top: 200px;
+    left: 240px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(135deg);
+}           
+.nova-clip:hover .pipe-4 {
+    top: 400px;
+    left: 40px;
+    width: 150px;            
+}               
+.pipe-5 {
+    top: 200px;
+    left: 370px;
+    width: 200px;
+    height: 80px;
+    transform: rotate(135deg);
+    z-index: 3;
+}   
+.nova-clip:hover .pipe-5 {
+    top: 400px;
+    left: 170px;
+    width: 350px;            
+}  
+.nova-clip:hover .pipe {
+    background: -webkit-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: -ms-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: -moz-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: -o-linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));
+    background: linear-gradient(left, rgba(204,230,237,0.2), rgba(0,151,195,1));        
+}
